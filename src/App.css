@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Oleo+Script+Swash+Caps&family=Oswald:wght@300;400;500&family=Poppins:wght@100;200&family=Source+Code+Pro:wght@400;600&display=swap");
+
+h1,
+h2,
+a {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+}
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+input,
+textarea,
+p,
+button {
+  font-family: "Source Code Pro", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #1d252e;
+  color: white;
+}
+.body {
+  background-color: whitesmoke;
+}
+body::-webkit-scrollbar {
+  margin-right: 20px;
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(104, 104, 145);
+  border-radius: 20px;
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.title-section {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+.row,
+.left,
+.right {
+  width: 50%;
+}
