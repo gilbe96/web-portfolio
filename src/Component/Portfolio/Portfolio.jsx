@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Card from "./Card/Card";
 import Modal from "./Modal/Modal";
 import FriendChat from "../../assets/friend-chat.png";

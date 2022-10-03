@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineDesktopWindows } from "react-icons/md";
-import { FaCode, FaTimesCircle } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import { RiCloseLine } from "react-icons/ri";
 import { StyledModal } from "./StyledModal";
 

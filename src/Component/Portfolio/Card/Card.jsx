@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { StyledCard } from "./StyledCard";
 
