@@ -107,7 +107,7 @@ function Contact() {
             />
             <h4>Your Phone</h4>
             <input
-              type="phone"
+              type="text"
               name="phone"
               placeholder="Write your phone here ..."
               value={data.phone}
