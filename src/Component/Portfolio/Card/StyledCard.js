@@ -8,7 +8,7 @@ width: 280px;
 margin-left: 22%;
 flex-direction: column;
 background-color: #f5f3f3;
-padding: 2.5rem 1rem;
+padding: 3rem 1rem;
 border-radius: 15px;
 box-shadow: 4px 6px 6px grey;
 margin-bottom: 50px;
@@ -63,7 +63,7 @@ img {
   box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
 }
 @media (max-width: 600px) {
-  margin-left: 3% !important;
+  margin-left: 5% !important;
   height: 300px;
   width: 230px;
   img {

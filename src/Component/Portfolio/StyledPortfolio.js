@@ -67,6 +67,11 @@ h2 {
     }
   }
 }
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .slider-frame {
+    margin-left: -100px !important;
+  }
+}
 @media (min-width: 871px) and (max-width: 1100px) {
   .slider-frame {
     margin-left: -100px !important;

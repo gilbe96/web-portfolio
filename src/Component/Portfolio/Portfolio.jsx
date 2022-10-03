@@ -4,6 +4,7 @@ import Modal from "./Modal/Modal";
 import FriendChat from "../../assets/friend-chat.png";
 import Bettris from "../../assets/bettris.png";
 import Gilshop from "../../assets/gilshop.png";
+import Emojis from "../../assets/emojis.png";
 import Carousel from "nuka-carousel";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import { StyledPortfolio } from "./StyledPortfolio";
@@ -14,7 +15,7 @@ function Portfolio() {
     {
       key: 0,
       category: "WEB DESIGN",
-      linkCode: "https://codesandbox.io/s/github/gilbe96/friend-chat",
+      linkCode: "https://codesandbox.io/s/github/gilbe96/friend-chat-frontend",
       linkApp: "https://friend-gi-chat.netlify.app",
       description: "It's a real time chat",
       longDescription:
@@ -38,6 +39,18 @@ function Portfolio() {
     {
       key: 2,
       category: "WEB DESIGN",
+      linkCode: "https://codesandbox.io/s/github/gilbe96/emojis",
+      linkApp: "https://emojis-gi.netlify.app",
+      description: "It's the emoji library",
+      longDescription:
+        "It's the the emoji library. This site shows the data of most of the emojis that are currently used to facilitate their use in other sites. You can use it on PC and mobile.",
+      skills: ["TS", "React", "Next", "Tailwind CSS"],
+      name: "Emojis",
+      image: Emojis,
+    },
+    {
+      key: 3,
+      category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/gilshop",
       linkApp: "https://gilshop.netlify.app",
       description: "It's the home page of a suit sales site",
@@ -48,17 +61,7 @@ function Portfolio() {
       image: Gilshop,
     },
   ];
-
-  const [modalData, setModalData] = useState({
-    key: 0,
-    longDescription:
-      "It's a real time chat. You will have the options to send messages and rexeive them quickly. You can use it on PC and mobile.",
-    linkCode: "https://codesandbox.io/s/github/gilbe96/friend-chat",
-    linkApp: "https://friend-gi-chat.netlify.app",
-    skills: ["React", "Node", "MongoDB", "Socket-io", "Style-Component"],
-    name: "Friend Chat",
-    image: FriendChat,
-  });
+  const [modalData, setModalData] = useState(cards[0]);
 
   const changeModalData = (props) => {
     setModalData({

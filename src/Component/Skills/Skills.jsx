@@ -12,6 +12,7 @@ import skill10 from "../../assets/skills/10.png";
 import skill11 from "../../assets/skills/11.png";
 import skill12 from "../../assets/skills/12.png";
 import skill13 from "../../assets/skills/13.png";
+import skill14 from "../../assets/skills/14.png";
 import { StyledSkills } from "./StyledSkills";
 
 function Skills() {
@@ -66,6 +67,10 @@ function Skills() {
         <div className="content-img">
           <img src={skill13} alt="" />
           <p>Sequelize</p>
+        </div>
+        <div className="content-img">
+          <img src={skill14} alt="" />
+          <p className="title-m-up">Tailwind CSS</p>
         </div>
         <div className="content-img">
           <img src={skill4} alt="" />

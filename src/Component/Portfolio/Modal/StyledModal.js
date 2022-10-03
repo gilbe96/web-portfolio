@@ -69,6 +69,7 @@ export const StyledModal = styled.div`
     h3 {
       text-align: justify;
       font-size: 16px;
+      color: #001a33;
     }
     .btn-content {
       display: flex;

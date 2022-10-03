@@ -79,7 +79,7 @@ function Contact() {
     } else {
       const re = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
       if (!re.exec(email)) {
-        toast.error("Your email must to be email.", toastOptions);
+        toast.error("This email is invalid.", toastOptions);
         return false;
       }
     }
