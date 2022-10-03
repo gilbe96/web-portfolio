@@ -59,11 +59,11 @@ function Contact() {
   };
   const handleValidation = () => {
     const { fullname, phone, email, message } = data;
-    if (fullname == "" || fullname == null || fullname.split(" ") == "") {
+    if (fullname === "" || fullname === null || fullname.split(" ") === "") {
       toast.error("Your name is required.", toastOptions);
       return false;
     }
-    if (phone == "" || phone == null || phone.split(" ") == "") {
+    if (phone === "" || phone === null || phone.split(" ") === "") {
       toast.error("Your phone is required.", toastOptions);
       return false;
     } else {
@@ -73,7 +73,7 @@ function Contact() {
         return false;
       }
     }
-    if (fullname == "" || email == null || email.split(" ") == "") {
+    if (fullname === "" || email === null || email.split(" ") === "") {
       toast.error("Your email is required.", toastOptions);
       return false;
     } else {
@@ -83,7 +83,7 @@ function Contact() {
         return false;
       }
     }
-    if (message == "" || message == null || message.split(" ") == "") {
+    if (message === "" || message === null || message.split(" ") === "") {
       toast.error("Your message is required.", toastOptions);
       return false;
     }
