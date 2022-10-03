@@ -67,7 +67,7 @@ function Contact() {
       toast.error("Your phone is required.", toastOptions);
       return false;
     } else {
-      const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{2,6}$/im;
+      const re = "/^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{2,6}$/im";
       if (!re.exec(phone)) {
         toast.error("This phone is invalid.", toastOptions);
         return false;
@@ -77,7 +77,7 @@ function Contact() {
       toast.error("Your email is required.", toastOptions);
       return false;
     } else {
-      const re = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+      const re = "/^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/";
       if (!re.exec(email)) {
         toast.error("This email is invalid.", toastOptions);
         return false;
