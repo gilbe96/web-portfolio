@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.div`
   .active {
-    padding: 0.7rem;
+    padding-bottom: 0.7rem;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -12,19 +12,18 @@ export const StyledHeader = styled.div`
     transition: 0.5s;
   }
   header {
-    height: 10vh;
-    line-height: 10vh;
     .container {
-      padding-top: 10px;
+      padding-top: 20px;
       display: flex;
       justify-content: space-between;
     }
   }
   .logo {
-    margin-top: -10px;
+    margin-top: -5px;
+    height: 90px;
     img {
-      height: 65px;
-      width: 65px;
+      height: 100%;
+      width: 100%;
     }
   }
   .navlink {
@@ -115,9 +114,6 @@ export const StyledHeader = styled.div`
         z-index: 999;
         font-size: 20px;
       }
-    }
-    .active {
-      height: 10vh;
     }
   }
 `;

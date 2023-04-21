@@ -5,6 +5,7 @@ import FriendChat from "../../assets/friend-chat.png";
 import Bettris from "../../assets/bettris.png";
 import Gilshop from "../../assets/gilshop.png";
 import Emojis from "../../assets/emojis.png";
+import Hangman from "../../assets/hangman.png";
 import Carousel from "nuka-carousel";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import { StyledPortfolio } from "./StyledPortfolio";
@@ -41,15 +42,27 @@ function Portfolio() {
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/emojis",
       linkApp: "https://emojis-gi.netlify.app",
-      description: "It's the emoji library",
+      description: "It's an emoji library",
       longDescription:
-        "It's the the emoji library. This site shows the data of most of the emojis that are currently used to facilitate their use in other sites. You can use it on PC and mobile.",
+        "It's an emoji library. This site shows the data of most of the emojis that are currently used to facilitate their use in other sites. You can use it on PC and mobile.",
       skills: ["TS", "React", "Next", "Tailwind CSS"],
       name: "Emojis",
       image: Emojis,
     },
     {
       key: 3,
+      category: "WEB DESIGN",
+      linkCode: "https://codesandbox.io/s/github/gilbe96/hangman-game",
+      linkApp: "https://hangman-gi.netlify.app",
+      description: "It's a hangman game",
+      longDescription:
+        "It's a hangman game. This is a fun site and good to refresh your memory or learn new words. You can use it on PC and mobile.",
+      skills: ["TS", "React", "Style-Component"],
+      name: "Hangman",
+      image: Hangman,
+    },
+    {
+      key: 4,
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/gilshop",
       linkApp: "https://gilshop.netlify.app",
