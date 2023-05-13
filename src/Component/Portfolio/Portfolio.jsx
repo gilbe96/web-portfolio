@@ -10,7 +10,7 @@ import Carousel from "nuka-carousel";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import { StyledPortfolio } from "./StyledPortfolio";
 
-function Portfolio() {
+const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const cards = [
     {
@@ -140,6 +140,6 @@ function Portfolio() {
       </StyledPortfolio>
     </>
   );
-}
+};
 
 export default Portfolio;

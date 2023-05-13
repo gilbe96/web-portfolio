@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { StyledContact } from "./StyledContact";
 
-function Contact() {
+const Contact = () => {
   const [data, setData] = useState({
     fullname: "",
     phone: "",
@@ -142,6 +142,6 @@ function Contact() {
       <ToastContainer />
     </>
   );
-}
+};
 
 export default Contact;

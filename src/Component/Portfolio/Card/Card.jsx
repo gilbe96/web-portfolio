@@ -2,7 +2,7 @@ import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { StyledCard } from "./StyledCard";
 
-function Card(props) {
+const Card = (props) => {
   return (
     <>
       <StyledCard id="openModal" onClick={() => props.changeModalData(props)}>
@@ -21,6 +21,6 @@ function Card(props) {
       </StyledCard>
     </>
   );
-}
+};
 
 export default Card;

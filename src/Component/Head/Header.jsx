@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { HiOutlineMenu } from "react-icons/hi";
 import { StyledHeader } from "./StyledHeader";
 
-function Header() {
+const Header = () => {
   // when scroll header at top
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -58,6 +58,6 @@ function Header() {
       </header>
     </StyledHeader>
   );
-}
+};
 
 export default Header;

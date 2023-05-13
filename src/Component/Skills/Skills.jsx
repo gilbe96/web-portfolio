@@ -15,7 +15,7 @@ import skill13 from "../../assets/skills/13.png";
 import skill14 from "../../assets/skills/14.png";
 import { StyledSkills } from "./StyledSkills";
 
-function Skills() {
+const Skills = () => {
   return (
     <StyledSkills className="container" id="skills">
       <h2 className="title-section">SKILLS</h2>
@@ -80,6 +80,6 @@ function Skills() {
       </div>
     </StyledSkills>
   );
-}
+};
 
 export default Skills;
