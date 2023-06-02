@@ -6,6 +6,7 @@ import Bettris from "../../assets/bettris.png";
 import Gilshop from "../../assets/gilshop.png";
 import Emojis from "../../assets/emojis.png";
 import Hangman from "../../assets/hangman.png";
+import CookBook from "../../assets/cook-book.png";
 import Carousel from "nuka-carousel";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import { StyledPortfolio } from "./StyledPortfolio";
@@ -30,7 +31,7 @@ const Portfolio = () => {
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/bettris",
       linkApp: "https://bettris.netlify.app",
-      description: "It's a good game to enjoy accompanied",
+      description: "It's similar to the Tetris",
       longDescription:
         "It's a good game to enjoy accompanied or alone. It's similar to the Tetris. You can use only PC. It's a compatible with Firefox Morzilla.",
       skills: ["JS", "P5", "CSS"],
@@ -64,9 +65,21 @@ const Portfolio = () => {
     {
       key: 4,
       category: "WEB DESIGN",
+      linkCode: "https://codesandbox.io/s/github/gilbe96/cook-book",
+      linkApp: "https://cook-book-gi.netlify.app",
+      description: "It's is a Latin cook book",
+      longDescription:
+        "It's is a Latin cook book. This is an interesting site to learn to cook delicious Latin dishes . You can use it on PC and mobile.",
+      skills: ["TS", "React", "Style-Component", "Chakra Ui"],
+      name: "Cook Book",
+      image: CookBook,
+    },
+    {
+      key: 5,
+      category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/gilshop",
       linkApp: "https://gilshop.netlify.app",
-      description: "It's the home page of a suit sales site",
+      description: "It's the home page of sales",
       longDescription:
         "It's the home page of a suit sales site. This shows that a good design can be achieved with the use of few resources. You can use it on PC and mobile.",
       skills: ["JS", "CSS", "AOS"],
