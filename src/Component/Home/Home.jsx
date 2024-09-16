@@ -2,8 +2,8 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { AiOutlineMail, AiOutlineGithub } from "react-icons/ai";
 import { FaLinkedinIn, FaFileDownload } from "react-icons/fa";
-import homePicture from "../../assets/home-picture.png";
-import pdf from "../../assets/Gilberto-A-Acosta-Soto.pdf";
+import homePicture from "../../assets/home-picture.jpeg";
+import pdf from "../../assets/CV-Gilberto A.pdf";
 import { StyledHome } from "./StyledHome";
 
 const Home = () => {

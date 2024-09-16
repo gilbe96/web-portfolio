@@ -31,7 +31,9 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     const response = handleValidation();
+
     if (response) {
+      console.log(e.target);
       emailjs
         .sendForm(
           "service_4les1hg",
@@ -59,6 +61,7 @@ const Contact = () => {
   };
   const handleValidation = () => {
     const { fullname, phone, email, message } = data;
+
     if (fullname === "" || fullname === null || fullname.split(" ") === "") {
       toast.error("Your name is required.", toastOptions);
       return false;
@@ -67,7 +70,7 @@ const Contact = () => {
       toast.error("Your phone is required.", toastOptions);
       return false;
     } else {
-      const re = "/^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{2,6}$/im";
+      const re = /^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{2,6}$/im;
       if (!re.exec(phone)) {
         toast.error("This phone is invalid.", toastOptions);
         return false;
@@ -77,7 +80,7 @@ const Contact = () => {
       toast.error("Your email is required.", toastOptions);
       return false;
     } else {
-      const re = "/^([da-z_.-]+)@([da-z.-]+).([a-z.]{2,6})$/";
+      const re = /^([a-z0-9_.-]+)@([a-z0-9.-]+).([a-z]{2,6})$/;
       if (!re.exec(email)) {
         toast.error("This email is invalid.", toastOptions);
         return false;
