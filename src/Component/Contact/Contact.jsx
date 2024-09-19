@@ -31,9 +31,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     const response = handleValidation();
-
     if (response) {
-      console.log(e.target);
       emailjs
         .sendForm(
           "service_4les1hg",
@@ -61,7 +59,6 @@ const Contact = () => {
   };
   const handleValidation = () => {
     const { fullname, phone, email, message } = data;
-
     if (fullname === "" || fullname === null || fullname.split(" ") === "") {
       toast.error("Your name is required.", toastOptions);
       return false;

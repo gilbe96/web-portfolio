@@ -35,6 +35,12 @@ export const StyledSkills = styled.div`
       .title-m-up {
         margin-top: -10px !important;
       }
+      .title-s-up {
+        margin-top: 5px !important;
+      }
+      .title-xs-up {
+        margin-top: 8px !important;
+      }
       img {
         height: 100px;
         width: 100px;

@@ -5,6 +5,7 @@ import { RiCloseLine } from "react-icons/ri";
 import { StyledModal } from "./StyledModal";
 
 const Modal = (props) => {
+  console.log(props.linkCode2, props.linkCode);
   return (
     <StyledModal>
       <div className={props.isOpen ? "darkBG isOpen" : "darkBG"} />
@@ -24,13 +25,19 @@ const Modal = (props) => {
               <h3>{props.longDescription}</h3>
               <div className="btn-content">
                 <a href={props.linkApp}>
-                  <span>Project </span>
+                  <span>Project</span>
                   <MdOutlineDesktopWindows className="icon" />
                 </a>
                 <a href={props.linkCode}>
-                  <span>Code </span>
+                  <span>Code</span>
                   <FaCode className="icon" />
                 </a>
+                {props.linkCode2 && (
+                  <a href={props.linkCode2}>
+                    <span>BE</span>
+                    <FaCode className="icon" />
+                  </a>
+                )}
               </div>
               <div className="modal-skills">
                 {props.skills.map((skill) => (

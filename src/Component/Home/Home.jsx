@@ -40,7 +40,7 @@ const Home = () => {
           <div className="col_1">
             <h4>FIND WITH ME</h4>
             <div className="button">
-              <a href="mailto:gilbealejandro1996@gmail.com">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gilbealejandro1996@gmail.com">
                 <AiOutlineMail className="icon" />
               </a>
               <a href="https://www.linkedin.com/in/gilberto-alejandro-acosta-soto-b25440237">

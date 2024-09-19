@@ -18,6 +18,7 @@ const Portfolio = () => {
       key: 0,
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/friend-chat-frontend",
+      linkCode2: "https://codesandbox.io/s/github/gilbe96/friend-chat-backend",
       linkApp: "https://friend-gi-chat.netlify.app",
       description: "It's a real time chat",
       longDescription:
@@ -30,6 +31,7 @@ const Portfolio = () => {
       key: 1,
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/bettris",
+      linkCode2: null,
       linkApp: "https://bettris.netlify.app",
       description: "It's similar to the Tetris",
       longDescription:
@@ -42,6 +44,7 @@ const Portfolio = () => {
       key: 2,
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/emojis",
+      linkCode2: null,
       linkApp: "https://emojis-gi.netlify.app",
       description: "It's an emoji library",
       longDescription:
@@ -54,6 +57,7 @@ const Portfolio = () => {
       key: 3,
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/hangman-game",
+      linkCode2: null,
       linkApp: "https://hangman-gi.netlify.app",
       description: "It's a hangman game",
       longDescription:
@@ -66,6 +70,7 @@ const Portfolio = () => {
       key: 4,
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/cook-book",
+      linkCode2: null,
       linkApp: "https://cook-book-gi.netlify.app",
       description: "It's is a Latin cook book",
       longDescription:
@@ -78,6 +83,7 @@ const Portfolio = () => {
       key: 5,
       category: "WEB DESIGN",
       linkCode: "https://codesandbox.io/s/github/gilbe96/gilshop",
+      linkCode2: null,
       linkApp: "https://gilshop.netlify.app",
       description: "It's the home page of sales",
       longDescription:
@@ -93,6 +99,7 @@ const Portfolio = () => {
     setModalData({
       key: props.key,
       linkCode: props.linkCode,
+      linkCode2: props.linkCode2,
       linkApp: props.linkApp,
       longDescription: props.longDescription,
       skills: props.skills,
@@ -111,6 +118,7 @@ const Portfolio = () => {
         key={modalData.key}
         skills={modalData.skills}
         linkCode={modalData.linkCode}
+        linkCode2={modalData.linkCode2}
         linkApp={modalData.linkApp}
         name={modalData.name}
         image={modalData.image}
@@ -121,12 +129,12 @@ const Portfolio = () => {
           <Carousel
             renderCenterLeftControls={({ previousSlide }) => (
               <button onClick={previousSlide}>
-                <FaCaretLeft />
+                <FaCaretLeft className="icon" />
               </button>
             )}
             renderCenterRightControls={({ nextSlide }) => (
               <button onClick={nextSlide}>
-                <FaCaretRight />
+                <FaCaretRight className="icon" />
               </button>
             )}
             cellAlign="center"
@@ -140,6 +148,7 @@ const Portfolio = () => {
                 key={card.key}
                 category={card.category}
                 linkCode={card.linkCode}
+                linkCode2={card.linkCode2}
                 linkApp={card.linkApp}
                 description={card.description}
                 longDescription={card.longDescription}

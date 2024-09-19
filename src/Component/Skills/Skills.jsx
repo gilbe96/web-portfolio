@@ -13,70 +13,40 @@ import skill11 from "../../assets/skills/11.png";
 import skill12 from "../../assets/skills/12.png";
 import skill13 from "../../assets/skills/13.png";
 import skill14 from "../../assets/skills/14.png";
+import skill15 from "../../assets/skills/15.png";
+import skill16 from "../../assets/skills/16.png";
 import { StyledSkills } from "./StyledSkills";
+
+const skillsData = [
+  { src: skill10, label: "React", style_p: "title-m-up" },
+  { src: skill11, label: "TypeScript", style_p: "" },
+  { src: skill2, label: "Material UI", style_p: "" },
+  { src: skill3, label: "Node", style_p: "" },
+  { src: skill1, label: "Git", style_p: "" },
+  { src: skill7, label: "Laravel", style_p: "" },
+  { src: skill8, label: "Bootstrap", style_p: "" },
+  { src: skill9, label: "Chakra UI", style_p: "" },
+  { src: skill6, label: "Mongo DB", style_p: "" },
+  { src: skill5, label: "MySQL", style_p: "" },
+  { src: skill12, label: "PostgreSQL", style_p: "" },
+  { src: skill13, label: "Sequelize", style_p: "" },
+  { src: skill14, label: "Tailwind CSS", style_p: "title-m-up" },
+  { src: skill4, label: "Styled Components", style_p: "title-up" },
+  { src: skill15, label: "FastApi", style_p: "title-s-up" },
+  { src: skill16, label: "Python", style_p: "title-xs-up" },
+];
 
 const Skills = () => {
   return (
     <StyledSkills className="container" id="skills">
       <h2 className="title-section">SKILLS</h2>
       <div className="images">
-        <div className="content-img">
-          <img src={skill10} alt="" />
-          <p>React</p>
-        </div>
-        <div className="content-img">
-          <img src={skill11} alt="" />
-          <p className="title-m-up">TypeScript</p>
-        </div>
-        <div className="content-img">
-          <img src={skill2} alt="" />
-          <p>Material UI</p>
-        </div>
-        <div className="content-img">
-          <img src={skill3} alt="" />
-          <p>Node</p>
-        </div>
-        <div className="content-img">
-          <img src={skill1} alt="" />
-          <p>Git</p>
-        </div>
-        <div className="content-img">
-          <img src={skill7} alt="" />
-          <p>Laravel</p>
-        </div>
-        <div className="content-img">
-          <img src={skill8} alt="" />
-          <p>Bootstrap</p>
-        </div>
-        <div className="content-img">
-          <img src={skill9} alt="" />
-          <p>Chakra UI</p>
-        </div>
-        <div className="content-img">
-          <img src={skill6} alt="" />
-          <p>Mongo DB</p>
-        </div>
-        <div className="content-img">
-          <img src={skill5} alt="" />
-          <p>MySQL</p>
-        </div>
-        <div className="content-img">
-          <img src={skill12} alt="" />
-          <p>PostgreSQL</p>
-        </div>
-        <div className="content-img">
-          <img src={skill13} alt="" />
-          <p>Sequelize</p>
-        </div>
-        <div className="content-img">
-          <img src={skill14} alt="" />
-          <p className="title-m-up">Tailwind CSS</p>
-        </div>
-        <div className="content-img">
-          <img src={skill4} alt="" />
-          <p className="title-up">Styled</p>
-          <p>Components</p>
-        </div>
+        {skillsData.map((skill, index) => (
+          <div className="content-img" key={index}>
+            <img src={skill.src} alt={`${skill.label} logo`} />
+            <p className={skill.style_p}>{skill.label}</p>
+          </div>
+        ))}
       </div>
     </StyledSkills>
   );
