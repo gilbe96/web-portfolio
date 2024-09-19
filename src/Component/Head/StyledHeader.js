@@ -23,7 +23,7 @@ export const StyledHeader = styled.div`
     height: 90px;
     img {
       height: 100%;
-      width: 100%;
+      width: 90px;
     }
   }
   .navlink {
