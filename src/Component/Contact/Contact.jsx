@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineSend } from "react-icons/ai";
 import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { StyledContact } from "./StyledContact";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -90,13 +92,21 @@ const Contact = () => {
     return true;
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <form onSubmit={sendEmail}>
         <StyledContact className="container" id="contact">
           <h2 className="title-section">CONTACT</h2>
 
-          <div className="content-contact">
+          <div
+            className="content-contact"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <h4>Your Name</h4>
             <input
               type="text"
@@ -122,7 +132,11 @@ const Contact = () => {
               onChange={InputEvent}
             />
           </div>
-          <div className="content-message">
+          <div
+            className="content-message"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <h4>Your Message</h4>
             <textarea
               name="message"

@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { AiOutlineMail, AiOutlineGithub } from "react-icons/ai";
 import { FaLinkedinIn, FaFileDownload } from "react-icons/fa";
 import homePicture from "../../assets/home-picture.jpeg";
 import pdf from "../../assets/CV-Gilberto A.pdf";
 import { StyledHome } from "./StyledHome";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <StyledHome className="container top">
-      <div className="left top">
+      <div className="left top" data-aos="fade-right" data-aos-duration="1500">
         <h1>
           Hi, I'm <span>Gilberto A. Acosta Soto</span>
         </h1>
@@ -66,7 +72,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="right" data-aos="fade-left" data-aos-duration="1500">
         <div className="right_img">
           <img src={homePicture} alt="" />
         </div>

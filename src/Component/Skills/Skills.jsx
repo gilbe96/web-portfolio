@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import skill1 from "../../assets/skills/1.png";
 import skill2 from "../../assets/skills/2.png";
 import skill3 from "../../assets/skills/3.png";
@@ -16,6 +16,8 @@ import skill14 from "../../assets/skills/14.png";
 import skill15 from "../../assets/skills/15.png";
 import skill16 from "../../assets/skills/16.png";
 import { StyledSkills } from "./StyledSkills";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const skillsData = [
   { src: skill10, label: "React", style_p: "title-m-up" },
@@ -37,10 +39,14 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <StyledSkills className="container" id="skills">
       <h2 className="title-section">SKILLS</h2>
-      <div className="images">
+      <div className="images" data-aos="zoom-in" data-aos-duration="1500">
         {skillsData.map((skill, index) => (
           <div className="content-img" key={index}>
             <img src={skill.src} alt={`${skill.label} logo`} />

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "./Card/Card";
 import Modal from "./Modal/Modal";
 import FriendChat from "../../assets/friend-chat.png";
@@ -10,6 +10,8 @@ import CookBook from "../../assets/cook-book.png";
 import Carousel from "nuka-carousel";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import { StyledPortfolio } from "./StyledPortfolio";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -108,6 +110,11 @@ const Portfolio = () => {
     });
     setIsOpen(true);
   };
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <Modal
@@ -125,7 +132,7 @@ const Portfolio = () => {
       />
       <StyledPortfolio className="container" id="portfolio">
         <h2 className="title-section">PORTFOLIO</h2>
-        <div className="content">
+        <div className="content" data-aos="zoom-in" data-aos-duration="1500">
           <Carousel
             renderCenterLeftControls={({ previousSlide }) => (
               <button onClick={previousSlide}>
